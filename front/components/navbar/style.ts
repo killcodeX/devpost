@@ -23,7 +23,7 @@ export const LogoWrapper = styled.span`
   flex-direction: row;
   align-items: baseline;
   align-items: flex-start;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif !important;
   font-size: 27px !important;
   line-height: 1 !important;
   text-transform: uppercase !important;
@@ -55,6 +55,9 @@ export const CategoriesWrapper = styled.div`
 export const CategoryItem = styled.span`
   margin: 0 25px;
   cursor: pointer;
+  &:hover {
+    box-shadow: inset 0 -3px 0 0 #ffcd3f;
+  }
 `;
 
 export const ThemeWrapper = styled.span`
