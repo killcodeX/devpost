@@ -2,6 +2,7 @@ export const light = {
   bg: {
     primary: "#ffffff",
     secondary: "#f9f9f9",
+    tertiary: "#ffffff",
     inset: "#e2e4e8",
     input: "rgba(65,67,78,0.12)",
   },
@@ -20,6 +21,7 @@ export const dark = {
   bg: {
     primary: "#050505",
     secondary: "#111111",
+    tertiary: "#18191A",
     inset: "#111111",
     input: "rgba(191,193,201,0.12)",
   },

@@ -7,7 +7,7 @@ let cat = ['Software', 'Technology','Reviews', 'About']
 export default function Home() {
   return (
     <Layout categories={cat}>
-      <div>bhai</div>
+      <div className='container'>bhai</div>
     </Layout>
   );
 }
