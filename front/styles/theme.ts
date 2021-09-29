@@ -1,6 +1,6 @@
 export const light = {
   bg: {
-    primary: "#eff0f5",
+    primary: "#ffffff",
     secondary: "#ffffff",
     inset: "#e2e4e8",
     input: "rgba(65,67,78,0.12)",

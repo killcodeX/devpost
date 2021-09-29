@@ -1,5 +1,16 @@
 import React from "react";
-import { HeaderWrapper } from "./style";
+import Link from "next/link";
+import {
+  HeaderWrapper,
+  HeadContainer,
+  LogoWrapper,
+  LogoTitle,
+  LogoSubtitle,
+  RightContainer,
+  CategoriesWrapper,
+  CategoryItem,
+  ThemeWrapper,
+} from "./style";
 import { useSelector, useDispatch } from "react-redux";
 import { getThemeChange } from "../../redux/actions/actions";
 
@@ -8,7 +19,24 @@ export default function Navbar({ categories }) {
   const theme = useSelector((state: any) => state.theme);
   return (
     <HeaderWrapper>
-      <span onClick={() => dispatch(getThemeChange())}>{theme ? "☀️" : "🌙"}</span>
+      <HeadContainer className="container">
+        <Link href="/">
+          <LogoWrapper>
+            <LogoTitle>Dev</LogoTitle>
+            <LogoSubtitle>Post</LogoSubtitle>
+          </LogoWrapper>
+        </Link>
+        <RightContainer>
+          <CategoriesWrapper>
+            {categories.map((item, index) => {
+              return <CategoryItem key={index}>{item}</CategoryItem>;
+            })}
+          </CategoriesWrapper>
+          <ThemeWrapper onClick={() => dispatch(getThemeChange())}>
+            {theme ? "☀️" : "🌙"}
+          </ThemeWrapper>
+        </RightContainer>
+      </HeadContainer>
     </HeaderWrapper>
   );
 }

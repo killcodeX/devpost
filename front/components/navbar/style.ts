@@ -3,12 +3,61 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  position:relative;
+  position: relative;
   width: 100%;
   transition: all 0.5s ease;
   border-bottom: 1px solid #bac1ca;
   padding: 17px 20px;
+  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 8%);
   color: ${(props) => props.theme.text.primary};
   background: ${(props) => props.theme.bg.primary};
+`;
+
+export const HeadContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const LogoWrapper = styled.span`
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-items: flex-start;
+  font-family: "Mulish", sans-serif;
+  font-size: 27px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+`;
+
+export const LogoTitle = styled.span`
+  display: block;
+  font-weight: 800 !important;
+`;
+
+export const LogoSubtitle = styled.span`
+  margin-top: 0;
+  margin-left: -2px;
+  display: block;
+  font-weight: 400 !important;
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+`;
+
+export const CategoriesWrapper = styled.div`
+  font-weight: 500;
+  font-size: 15px;
+`;
+
+export const CategoryItem = styled.span`
+  margin: 0 25px;
+  cursor: pointer;
+`;
+
+export const ThemeWrapper = styled.span`
+  font-size: 20px;
+  cursor: pointer;
 `;
