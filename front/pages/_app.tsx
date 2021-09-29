@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   const theme = useSelector((state: any) => state.theme)
   
   return (
-      <ThemeProvider theme={theme === theme ? dark : light}>
+      <ThemeProvider theme={theme? dark : light}>
         <Component {...pageProps} />
       </ThemeProvider>
   );
