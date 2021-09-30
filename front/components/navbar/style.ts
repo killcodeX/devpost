@@ -11,6 +11,11 @@ export const HeaderWrapper = styled.nav`
   box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 8%);
   color: ${(props) => props.theme.text.primary};
   background: ${(props) => props.theme.bg.primary};
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const HeadContainer = styled.div`

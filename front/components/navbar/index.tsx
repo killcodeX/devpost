@@ -13,10 +13,15 @@ import {
 } from "./style";
 import { useSelector, useDispatch } from "react-redux";
 import { getThemeChange } from "../../redux/actions/actions";
+import useWindowWidth from "../../helpers/useWindowsize";
 
 export default function Navbar({ categories }) {
   const dispatch = useDispatch();
   const theme = useSelector((state: any) => state.theme);
+  const width = useWindowWidth();
+
+  console.log("current width -->", width);
+
   return (
     <HeaderWrapper>
       <HeadContainer className="container">
@@ -27,11 +32,13 @@ export default function Navbar({ categories }) {
           </LogoWrapper>
         </Link>
         <RightContainer>
-          <CategoriesWrapper>
-            {categories.map((item, index) => {
-              return <CategoryItem key={index}>{item}</CategoryItem>;
-            })}
-          </CategoriesWrapper>
+          {width > 480 ? (
+            <CategoriesWrapper>
+              {categories.map((item, index) => {
+                return <CategoryItem key={index}>{item}</CategoryItem>;
+              })}
+            </CategoriesWrapper>
+          ) : null}
           <ThemeWrapper onClick={() => dispatch(getThemeChange())}>
             {theme ? "☀️" : "🌙"}
           </ThemeWrapper>
