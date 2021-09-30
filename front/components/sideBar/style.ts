@@ -5,8 +5,10 @@ export const SidebarWrapper = styled.div`
   left: 0;
   top: 0;
   z-index: 5;
-  background-color: white;
-  width: ${props => props.side? '90%' : '0%'};
+  background: ${(props) => props.theme.bg.tertiary};
+  color: ${(props) => props.theme.text.primary};
+  width: ${(props) => (props.side ? "90%" : "0%")};
+  opacity: ${(props) => (props.side ? "1" : "0")};
   height: 100vh;
   padding: 15px;
   border-right: 1px solid #c8beaa;

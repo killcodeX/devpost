@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { CgFormatJustify } from "react-icons/cg";
 import {
   HeaderWrapper,
   HeadContainer,
@@ -10,8 +11,7 @@ import {
   CategoriesWrapper,
   CategoryItem,
   ThemeWrapper,
-  HamWrapper,
-  HamIcon
+  IconWrapper
 } from "./style";
 import { useSelector, useDispatch } from "react-redux";
 import { getThemeChange, getSideOpen } from "../../redux/actions/actions";
@@ -44,9 +44,9 @@ export default function Navbar({ categories }) {
           </ThemeWrapper>
           {
             width > 480? null : (
-              <HamWrapper onClick={() => dispatch(getSideOpen())}>
-                <HamIcon src='/ham.svg' alt='ham' />
-              </HamWrapper>
+              <IconWrapper onClick={() => dispatch(getSideOpen())}>
+                <CgFormatJustify/>
+              </IconWrapper>
             )
           }
         </RightContainer>

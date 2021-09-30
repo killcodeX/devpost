@@ -71,17 +71,10 @@ export const ThemeWrapper = styled.span`
   cursor: pointer;
 `;
 
-export const HamWrapper = styled.span`
+export const IconWrapper = styled.div`
+  font-size: 29px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 3rem;
-  width: 3rem;
-`;
-
-export const HamIcon = styled.img`
-  filter: ${(props) =>
-    props.theme.text.primary !== "#ffffff"
-      ? "invert(100%) sepia(1%) saturate(4%) hue-rotate(3deg) brightness(103%) contrast(101%)"
-      : "invert(0%) sepia(100%) saturate(7500%) hue-rotate(84deg) brightness(89%) contrast(94%)"};
+  padding-left:10px;
 `;

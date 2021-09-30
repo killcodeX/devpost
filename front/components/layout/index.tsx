@@ -7,7 +7,7 @@ export default function layout({ children, categories }: any) {
   return (
     <LayoutWrapper>
       <Navbar categories={categories} />
-      <Sidebar/>
+      <Sidebar />
       <MainWrapper>{children}</MainWrapper>
       <Footer />
     </LayoutWrapper>
