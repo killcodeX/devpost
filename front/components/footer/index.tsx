@@ -38,18 +38,18 @@ export default function Footer() {
             <div className="col-md-3 col-sm-12 mt-3">
               <FooterSectionTitle>Follow Us</FooterSectionTitle>
               <FooterSocial>
-                <Link href="#">
+                <a href="/">
                   <CgFacebook />
-                </Link>
-                <Link href="#">
+                </a>
+                <a href="#">
                   <CgInstagram />
-                </Link>
-                <Link href="#">
+                </a>
+                <a href="#">
                   <CgTwitter />
-                </Link>
-                <Link href="#">
+                </a>
+                <a href="#">
                   <CgYoutube />
-                </Link>
+                </a>
               </FooterSocial>
               <FooterDescription>
                 Contact Us : <a href="#">contact@devpost.com</a>
