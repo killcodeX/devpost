@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.nav`
   position: relative;
   width: 100%;
   transition: all 0.5s ease;
-  border-bottom: 1px solid #bac1ca;
+  //border-bottom: 1px solid #bac1ca;
   padding: 17px 20px;
   box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 8%);
   color: ${(props) => props.theme.text.primary};

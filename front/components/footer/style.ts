@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   transition: all 0.5s ease;
   color: ${(props) => props.theme.text.primary};
   background: ${(props) => props.theme.bg.secondary};

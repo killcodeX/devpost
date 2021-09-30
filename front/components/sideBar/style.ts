@@ -24,6 +24,8 @@ export const SideHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #bac1ca;
 `;
 
 export const IconWrapper = styled.div`
@@ -43,4 +45,20 @@ export const SideBarHeading = styled.div`
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
+`;
+
+export const CategoriesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 20px;
+`;
+
+export const CategoryItem = styled.span`
+  display: block;
+  margin: 25px 10px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 0 -3px 0 0 #ffcd3f;
+  }
 `;
