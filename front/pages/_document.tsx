@@ -3,9 +3,10 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class CustomDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          {/* <link rel="shortcut icon" href={getStrapiMedia(global.favicon)} /> */}
+          <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Staatliches"

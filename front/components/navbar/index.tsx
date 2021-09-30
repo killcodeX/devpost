@@ -11,15 +11,16 @@ import {
   CategoriesWrapper,
   CategoryItem,
   ThemeWrapper,
-  IconWrapper
+  IconWrapper,
 } from "./style";
 import { useSelector, useDispatch } from "react-redux";
 import { getThemeChange, getSideOpen } from "../../redux/actions/actions";
 import useWindowWidth from "../../helpers/useWindowsize";
 
-export default function Navbar({ categories }) {
+export default function Navbar() { //{ categories }
   const dispatch = useDispatch();
   const theme = useSelector((state: any) => state.theme);
+  const categories = useSelector((state: any) => state.categories);
   const width = useWindowWidth();
 
   return (
@@ -34,21 +35,28 @@ export default function Navbar({ categories }) {
         <RightContainer>
           {width > 680 ? (
             <CategoriesWrapper>
-              {categories.map((item, index) => {
-                return <CategoryItem key={index}>{item}</CategoryItem>;
+              {categories.map((category) => {
+                return (
+                  <CategoryItem key={category.id}>
+                    <Link
+                      as={`/category/${category.slug}`}
+                      href="/category/[id]"
+                    >
+                      <a className="uk-link-reset">{category.name}</a>
+                    </Link>
+                  </CategoryItem>
+                );
               })}
             </CategoriesWrapper>
           ) : null}
           <ThemeWrapper onClick={() => dispatch(getThemeChange())}>
             {theme ? "☀️" : "🌙"}
           </ThemeWrapper>
-          {
-            width > 480? null : (
-              <IconWrapper onClick={() => dispatch(getSideOpen())}>
-                <CgFormatJustify/>
-              </IconWrapper>
-            )
-          }
+          {width > 480 ? null : (
+            <IconWrapper onClick={() => dispatch(getSideOpen())}>
+              <CgFormatJustify />
+            </IconWrapper>
+          )}
         </RightContainer>
       </HeadContainer>
     </HeaderWrapper>
