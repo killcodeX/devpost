@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { CgFacebook, CgInstagram, CgTwitter, CgYoutube } from "react-icons/cg";
 import {
   FooterWrapper,
   UpperFooter,
@@ -8,6 +9,7 @@ import {
   LogoSubtitle,
   FooterSectionTitle,
   FooterDescription,
+  FooterSocial,
   BottomFooter,
 } from "./style";
 
@@ -25,7 +27,7 @@ export default function Footer() {
                 </LogoWrapper>
               </Link>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-3">
               <FooterSectionTitle>About Us</FooterSectionTitle>
               <FooterDescription>
                 Newspaper WordPress Theme is your news, entertainment, music
@@ -33,18 +35,30 @@ export default function Footer() {
                 and videos straight from the entertainment industry.
               </FooterDescription>
             </div>
-            <div className="col-md-3 col-sm-12">
+            <div className="col-md-3 col-sm-12 mt-3">
               <FooterSectionTitle>Follow Us</FooterSectionTitle>
+              <FooterSocial>
+                <Link href="#">
+                  <CgFacebook />
+                </Link>
+                <Link href="#">
+                  <CgInstagram />
+                </Link>
+                <Link href="#">
+                  <CgTwitter />
+                </Link>
+                <Link href="#">
+                  <CgYoutube />
+                </Link>
+              </FooterSocial>
               <FooterDescription>
-                Contact Us : <a href='#'>contact@devpost.com</a>
+                Contact Us : <a href="#">contact@devpost.com</a>
               </FooterDescription>
             </div>
           </div>
         </div>
       </UpperFooter>
-      <BottomFooter>
-        © DevPost | All rights reserved.
-      </BottomFooter>
+      <BottomFooter>© DevPost | All rights reserved.</BottomFooter>
     </FooterWrapper>
   );
 }
