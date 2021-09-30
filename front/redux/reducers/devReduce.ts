@@ -1,7 +1,8 @@
-import { CHANGETHEME } from "../actions/actionConstant";
+import { CHANGETHEME, OPENSIDE } from "../actions/actionConstant";
 
 const initialState = {
   theme: false,
+  side: false,
 };
 
 // Reducers
@@ -12,7 +13,11 @@ export const DevReducer = (state = initialState, action) => {
         ...state,
         theme: !state.theme,
       };
-
+    case OPENSIDE:
+      return {
+        ...state,
+        side: !state.side,
+      };
     default:
       return state;
   }

@@ -10,17 +10,17 @@ import {
   CategoriesWrapper,
   CategoryItem,
   ThemeWrapper,
+  HamWrapper,
+  HamIcon
 } from "./style";
 import { useSelector, useDispatch } from "react-redux";
-import { getThemeChange } from "../../redux/actions/actions";
+import { getThemeChange, getSideOpen } from "../../redux/actions/actions";
 import useWindowWidth from "../../helpers/useWindowsize";
 
 export default function Navbar({ categories }) {
   const dispatch = useDispatch();
   const theme = useSelector((state: any) => state.theme);
   const width = useWindowWidth();
-
-  console.log("current width -->", width);
 
   return (
     <HeaderWrapper>
@@ -32,7 +32,7 @@ export default function Navbar({ categories }) {
           </LogoWrapper>
         </Link>
         <RightContainer>
-          {width > 480 ? (
+          {width > 680 ? (
             <CategoriesWrapper>
               {categories.map((item, index) => {
                 return <CategoryItem key={index}>{item}</CategoryItem>;
@@ -42,6 +42,13 @@ export default function Navbar({ categories }) {
           <ThemeWrapper onClick={() => dispatch(getThemeChange())}>
             {theme ? "☀️" : "🌙"}
           </ThemeWrapper>
+          {
+            width > 480? null : (
+              <HamWrapper onClick={() => dispatch(getSideOpen())}>
+                <HamIcon src='/ham.svg' alt='ham' />
+              </HamWrapper>
+            )
+          }
         </RightContainer>
       </HeadContainer>
     </HeaderWrapper>

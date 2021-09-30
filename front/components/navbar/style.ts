@@ -21,6 +21,7 @@ export const HeaderWrapper = styled.nav`
 export const HeadContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const LogoWrapper = styled.span`
@@ -68,4 +69,19 @@ export const CategoryItem = styled.span`
 export const ThemeWrapper = styled.span`
   font-size: 20px;
   cursor: pointer;
+`;
+
+export const HamWrapper = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+`;
+
+export const HamIcon = styled.img`
+  filter: ${(props) =>
+    props.theme.text.primary !== "#ffffff"
+      ? "invert(100%) sepia(1%) saturate(4%) hue-rotate(3deg) brightness(103%) contrast(101%)"
+      : "invert(0%) sepia(100%) saturate(7500%) hue-rotate(84deg) brightness(89%) contrast(94%)"};
 `;
