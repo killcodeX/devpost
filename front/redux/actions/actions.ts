@@ -3,6 +3,7 @@ import {
   OPENSIDE,
   GETGLOBAL,
   GETCATEGORY,
+  GETSEO,
 } from "./actionConstant";
 
 export const getThemeChange = () => {
@@ -30,3 +31,11 @@ export const getCategory = (payload) => {
     payload: payload,
   };
 };
+
+export const getSeo = (payload) => {
+  return {
+    type: GETSEO,
+    payload: payload,
+  };
+};
+

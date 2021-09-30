@@ -17,10 +17,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { getThemeChange, getSideOpen } from "../../redux/actions/actions";
 import useWindowWidth from "../../helpers/useWindowsize";
 
-export default function Navbar() { //{ categories }
+export default function Navbar({ categories }) { //
   const dispatch = useDispatch();
   const theme = useSelector((state: any) => state.theme);
-  const categories = useSelector((state: any) => state.categories);
+  //const categories = useSelector((state: any) => state.categories);
   const width = useWindowWidth();
 
   return (

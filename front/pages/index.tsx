@@ -1,12 +1,15 @@
-import { useDispatch } from "react-redux";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 import { fetchAPI } from "../lib/api";
-import { getCategory } from "../redux/actions/actions";
 
 const Home = ({ articles, categories, homepage }) => {
-  const dispatch = useDispatch();
-
-  dispatch(getCategory(categories));
-  return <div className="container">bhai</div>;
+  return (
+    <Layout categories={categories}>
+      <div className="container">
+        <Seo seo={homepage.seo}></Seo>
+      </div>
+    </Layout>
+  );
 };
 
 export async function getStaticProps() {

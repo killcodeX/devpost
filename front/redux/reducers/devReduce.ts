@@ -1,8 +1,15 @@
-import { CHANGETHEME, OPENSIDE, GETGLOBAL, GETCATEGORY } from "../actions/actionConstant";
+import {
+  CHANGETHEME,
+  OPENSIDE,
+  GETGLOBAL,
+  GETCATEGORY,
+  GETSEO,
+} from "../actions/actionConstant";
 
 const initialState = {
   theme: false,
   side: false,
+  seo: {},
   global: {},
   categories: [],
 };
@@ -29,6 +36,11 @@ export const DevReducer = (state = initialState, action) => {
       return {
         ...state,
         categories: action.payload,
+      };
+    case GETSEO:
+      return {
+        ...state,
+        seo: action.payload,
       };
     default:
       return state;

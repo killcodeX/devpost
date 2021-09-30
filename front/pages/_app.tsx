@@ -26,9 +26,7 @@ function MyApp({ Component, pageProps }) {
         <title>{global.siteName}</title>
       </Head>
       <ThemeProvider theme={theme ? dark : light}>
-        <Layout categories={cat}>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );
