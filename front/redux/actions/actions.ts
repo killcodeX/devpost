@@ -1,4 +1,9 @@
-import { CHANGETHEME, OPENSIDE, GETGLOBAL } from "./actionConstant";
+import {
+  CHANGETHEME,
+  OPENSIDE,
+  GETGLOBAL,
+  GETCATEGORY,
+} from "./actionConstant";
 
 export const getThemeChange = () => {
   return {
@@ -12,9 +17,16 @@ export const getSideOpen = () => {
   };
 };
 
-export const getGlobal = (payload) =>{
+export const getGlobal = (payload) => {
   return {
     type: GETGLOBAL,
     payload: payload,
-  }
-}
+  };
+};
+
+export const getCategory = (payload) => {
+  return {
+    type: GETCATEGORY,
+    payload: payload,
+  };
+};
