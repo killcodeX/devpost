@@ -30,7 +30,6 @@ import {
 
 const ArticlePost = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.image);
-  console.log(article.author);
 
   const seo = {
     metaTitle: article.title,
