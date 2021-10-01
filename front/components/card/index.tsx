@@ -1,25 +1,35 @@
 import React from "react";
 import Link from "next/link";
 import Image from "../image";
+import {
+  CardWrapper,
+  CardUpper,
+  CardLower,
+  ArticleDetails, 
+  ArticleCategory,
+  ArticleDate,
+  ArticleAuthor, 
+  ArticleTitle,
+  ArticleDescription,
+} from "./style";
 
 export default function Cards({ article }) {
   return (
-    <Link as={`/article/${article.slug}`} href="/article/[id]">
-      <a className="uk-link-reset">
-        <div className="uk-card uk-card-muted">
-          <div className="uk-card-media-top">
-            <Image image={article.image} />
-          </div>
-          <div className="uk-card-body">
-            <p id="category" className="uk-text-uppercase">
-              {article.category.name}
-            </p>
-            <p id="title" className="uk-text-large">
-              {article.title}
-            </p>
-          </div>
-        </div>
-      </a>
-    </Link>
+    <CardWrapper>
+      <CardUpper>
+        <Image image={article.image} />
+      </CardUpper>
+      <CardLower>
+        <ArticleDetails>
+          <ArticleCategory>{article.category.name}</ArticleCategory>
+          <ArticleDate>1/02/21</ArticleDate>
+          <ArticleAuthor>Aaquib Ahmed</ArticleAuthor>
+        </ArticleDetails>
+        <Link as={`/article/${article.slug}`} href="/article/[id]">
+          <ArticleTitle>{article.title}</ArticleTitle>
+        </Link>
+        <ArticleDescription>{article.description}</ArticleDescription>
+      </CardLower>
+    </CardWrapper>
   );
 }
