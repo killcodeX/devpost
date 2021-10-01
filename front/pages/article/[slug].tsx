@@ -30,6 +30,7 @@ import {
 
 const ArticlePost = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.image);
+  const link: any = `${process.env.NEXT_PUBLIC_URL}/article/${article.slug}`;
 
   const seo = {
     metaTitle: article.title,
@@ -70,11 +71,17 @@ const ArticlePost = ({ article, categories }) => {
           <DividerWrapper>|</DividerWrapper>
           <ShareWrapper>Share</ShareWrapper>
           <IconWrapper>
-            <CgFacebook />
+            <a
+              href={`https://www.facebook.com/sharer.php?u=${link}`}
+              target="_blank"
+              title="Share on Twitter"
+            >
+              <CgFacebook />
+            </a>
           </IconWrapper>
           <IconWrapper>
             <a
-              href={`//twitter.com/intent/tweet?text=${article.slug}`}
+              href={`https://twitter.com/intent/tweet?url=${link}&text=${article.title}`}
               target="_blank"
               title="Share on Twitter"
             >
@@ -82,7 +89,13 @@ const ArticlePost = ({ article, categories }) => {
             </a>
           </IconWrapper>
           <IconWrapper>
-            <SiWhatsapp />
+            <a
+              href={`https://api.whatsapp.com/send?text=${article.title} %0A%0A ${link}`}
+              target="_blank"
+              title="Share on Twitter"
+            >
+              <SiWhatsapp />
+            </a>
           </IconWrapper>
         </PostShare>
         <ReactMarkdown children={article.content} skipHtml={true} />
