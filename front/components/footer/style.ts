@@ -42,7 +42,7 @@ export const LogoSubtitle = styled.span`
 `;
 
 export const FooterSectionTitle = styled.h2`
-  color: ${(props) => props.theme.text.primary};S
+  color: ${(props) => props.theme.text.primary};
   font-size: 26px;
   font-weight: 800;
   margin-top: 0;

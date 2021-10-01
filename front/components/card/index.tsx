@@ -1,14 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import Image from "../image";
+import Moment from "react-moment";
 import {
   CardWrapper,
   CardUpper,
   CardLower,
-  ArticleDetails, 
+  ArticleDetails,
   ArticleCategory,
   ArticleDate,
-  ArticleAuthor, 
+  ArticleAuthor,
   ArticleTitle,
   ArticleDescription,
 } from "./style";
@@ -22,7 +23,9 @@ export default function Cards({ article }) {
       <CardLower>
         <ArticleDetails>
           <ArticleCategory>{article.category.name}</ArticleCategory>
-          <ArticleDate>1/02/21</ArticleDate>
+          <ArticleDate>
+            <Moment format="Do/MM/YY">{article.published_at}</Moment>
+          </ArticleDate>
           <ArticleAuthor>Aaquib Ahmed</ArticleAuthor>
         </ArticleDetails>
         <Link as={`/article/${article.slug}`} href="/article/[id]">

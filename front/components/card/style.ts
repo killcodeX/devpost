@@ -23,24 +23,36 @@ export const ArticleDetails = styled.div`
 export const ArticleCategory = styled.span`
   font-size: 18px;
   text-transform: uppercase;
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const ArticleDate = styled.span`
   color: #ffcd3f;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1;
   font-weight: 400 t;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 0 20px;
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const ArticleAuthor = styled.span`
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @media (max-width: 480px) {
+    font-size: 11px;
+  }
 `;
 
 export const ArticleTitle = styled.div`

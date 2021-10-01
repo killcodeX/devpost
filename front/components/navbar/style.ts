@@ -33,6 +33,7 @@ export const LogoWrapper = styled.span`
   font-size: 27px !important;
   line-height: 1 !important;
   text-transform: uppercase !important;
+  cursor: pointer;
 `;
 
 export const LogoTitle = styled.span`
@@ -76,5 +77,5 @@ export const IconWrapper = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding-left:10px;
+  padding-left: 10px;
 `;
