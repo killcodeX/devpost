@@ -13,7 +13,7 @@ import {
   BottomFooter,
 } from "./style";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <FooterWrapper>
       <UpperFooter>

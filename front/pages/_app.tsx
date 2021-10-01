@@ -8,12 +8,16 @@ import "../styles/globals.css";
 import { fetchAPI } from "../lib/api";
 import { getGlobal } from "../redux/actions/actions";
 import { getStrapiMedia } from "../lib/media";
-import React from "react";
+import React, { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();
   const { global } = pageProps;
-  dispatch(getGlobal(global));
+
+  useEffect(() => {
+    dispatch(getGlobal(global));
+  }, []);
+
   const theme = useSelector((state: any) => state.theme);
 
   return (
@@ -29,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-MyApp.getInitialProps = async (ctx: any) => {
+MyApp.getInitialProps = async (ctx) => {
   const appProps = await App.getInitialProps(ctx);
   const global = await fetchAPI("/global");
   return { ...appProps, pageProps: { global } };

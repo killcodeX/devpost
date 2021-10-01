@@ -1,3 +1,4 @@
+import { HYDRATE } from "next-redux-wrapper";
 import {
   CHANGETHEME,
   OPENSIDE,
@@ -17,6 +18,11 @@ const initialState = {
 // Reducers
 export const DevReducer = (state = initialState, action) => {
   switch (action.type) {
+    case HYDRATE:
+      return {
+        ...state, // use previous state
+        ...action.payload, // apply delta from hydration
+      };
     case CHANGETHEME:
       return {
         ...state,

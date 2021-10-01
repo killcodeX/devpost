@@ -13,10 +13,10 @@ import {
   CategoryItem
 } from "./style";
 
-export default function Sidebar() {
+export default function Sidebar({categories}) {
   const dispatch = useDispatch();
   const side = useSelector((state: any) => state.side);
-  const categories = useSelector((state: any) => state.categories);
+  //const categories = useSelector((state: any) => state.categories);
 
   return (
     <SidebarWrapper side={side}>
