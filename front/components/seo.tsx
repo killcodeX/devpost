@@ -2,7 +2,7 @@ import Head from "next/head";
 import { getStrapiMedia } from "../lib/media";
 import { useSelector } from "react-redux";
 
-const Seo = ({seo}) => {
+const Seo = ({ seo }) => {
   const global = useSelector((state: any) => state.global);
   const { defaultSeo, siteName } = global;
   const seoWithDefaults = {

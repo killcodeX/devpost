@@ -1,12 +1,14 @@
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Articles from "../components/articles";
 import { fetchAPI } from "../lib/api";
 
 const Home = ({ articles, categories, homepage }) => {
   return (
     <Layout categories={categories}>
+      <Seo seo={homepage.seo} />
       <div className="container">
-        <Seo seo={homepage.seo}></Seo>
+        <Articles articles={articles} />
       </div>
     </Layout>
   );

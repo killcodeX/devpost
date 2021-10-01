@@ -5,13 +5,10 @@ import { ThemeProvider } from "styled-components";
 import { light, dark } from "../styles/theme";
 import { wrapper } from "../redux/store";
 import "../styles/globals.css";
-import Layout from "../components/layout";
 import { fetchAPI } from "../lib/api";
 import { getGlobal } from "../redux/actions/actions";
 import { getStrapiMedia } from "../lib/media";
 import React from "react";
-
-let cat = ["Software", "Technology", "Reviews", "About"];
 
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();
