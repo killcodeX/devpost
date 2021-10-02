@@ -43,7 +43,7 @@ export default function Navbar({ categories }) {
                       as={`/category/${category.slug}`}
                       href="/category/[id]"
                     >
-                      {category.name}
+                      <a style={{ color: "inherit" }}>{category.name}</a>
                     </Link>
                   </CategoryItem>
                 );

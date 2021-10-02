@@ -11,13 +11,7 @@ export const ArticleBanner = styled.div`
 
 export const ArticleImage = styled.div`
   position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-  }
+  height: 550px;
 
   &:after {
     content: "";
@@ -27,6 +21,10 @@ export const ArticleImage = styled.div`
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0));
+  }
+
+  @media(max-width: 480px){
+    height: auto;
   }
 `;
 
@@ -131,7 +129,7 @@ export const PostShare = styled.div`
   width: 260px;
   padding-bottom: 40px;
   @media (max-width: 480px) {
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 `;
 

@@ -17,17 +17,19 @@ import {
 } from "./style";
 
 export default function Cards({ article }) {
+  console.log(article);
   return (
     <CardWrapper>
       <CardUpper>
-        <ImageWrapper>
+        {/* <ImageWrapper></ImageWrapper> */}
+        <div className="unset-img">
           <Image
             src={getStrapiMedia(article.image)}
             alt={article.title}
-            width={500}
-            height={500}
+            layout="fill"
+            className="custom-img"
           />
-        </ImageWrapper>
+        </div>
       </CardUpper>
       <CardLower>
         <ArticleDetails>
@@ -35,7 +37,7 @@ export default function Cards({ article }) {
           <ArticleDate>
             <Moment format="Do/MM/YY">{article.published_at}</Moment>
           </ArticleDate>
-          <ArticleAuthor>Aaquib Ahmed</ArticleAuthor>
+          <ArticleAuthor>{article.author.name}</ArticleAuthor>
         </ArticleDetails>
         <Link as={`/article/${article.slug}`} href="/article/[id]">
           <ArticleTitle>{article.title}</ArticleTitle>

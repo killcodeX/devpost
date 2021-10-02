@@ -7,12 +7,10 @@ export const CardWrapper = styled.div`
   border: 1px solid #eaeaea;
   box-shadow: rgb(0 0 0 / 8%) 0px 4px 8px;
 `;
-export const CardUpper = styled.div``;
+export const CardUpper = styled.div`
+`;
 
 export const ImageWrapper = styled.div`
-  position: relative img {
-    object-fit: cover;
-  }
 `;
 
 export const CardLower = styled.div`

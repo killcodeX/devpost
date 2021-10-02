@@ -9,14 +9,14 @@ const Articles = ({ articles }) => {
 
   return (
     <ArticleWrapper className="row">
-      <div className="col-md-6">
+      <div className="col-md-8">
         {leftArticles.map((article) => {
           return (
             <Card article={article} key={`article__left__${article.slug}`} />
           );
         })}
       </div>
-      <div className="col-md-6">
+      <div className="col-md-4">
         {rightArticles.map((article) => {
           return (
             <Card article={article} key={`article__left__${article.slug}`} />
