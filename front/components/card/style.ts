@@ -9,6 +9,12 @@ export const CardWrapper = styled.div`
 `;
 export const CardUpper = styled.div``;
 
+export const ImageWrapper = styled.div`
+  position: relative img {
+    object-fit: cover;
+  }
+`;
+
 export const CardLower = styled.div`
   padding: 20px 15px;
   color: ${(props) => props.theme.text.primary};

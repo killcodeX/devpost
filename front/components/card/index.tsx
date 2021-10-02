@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import Image from "../image";
+import Image from "next/image";
+import { getStrapiMedia } from "../../lib/media";
 import Moment from "react-moment";
 import {
   CardWrapper,
   CardUpper,
+  ImageWrapper,
   CardLower,
   ArticleDetails,
   ArticleCategory,
@@ -18,7 +20,14 @@ export default function Cards({ article }) {
   return (
     <CardWrapper>
       <CardUpper>
-        <Image image={article.image} />
+        <ImageWrapper>
+          <Image
+            src={getStrapiMedia(article.image)}
+            alt={article.title}
+            width={500}
+            height={500}
+          />
+        </ImageWrapper>
       </CardUpper>
       <CardLower>
         <ArticleDetails>

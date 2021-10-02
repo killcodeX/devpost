@@ -10,6 +10,7 @@ export const ArticleBanner = styled.div`
 `;
 
 export const ArticleImage = styled.div`
+  position: relative;
   img {
     width: 100%;
     height: 100%;
@@ -58,6 +59,7 @@ export const PostMeta = styled.div`
 `;
 
 export const AuthorWrapper = styled.div`
+  position: relative;
   width: 40px;
   height: 40px;
   overflow: hidden;
@@ -156,6 +158,7 @@ export const PostFooter = styled.div`
 `;
 
 export const FooterAuthorWrapper = styled.div`
+  position: relative;
   width: 70px;
   height: 70px;
   overflow: hidden;
