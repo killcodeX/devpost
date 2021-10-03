@@ -17,7 +17,6 @@ import {
 } from "./style";
 
 export default function Cards({ article }) {
-  console.log(article);
   return (
     <CardWrapper>
       <CardUpper>
