@@ -66,7 +66,7 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 <br>
 <br>
 <p align="left">
-  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/6.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/6.jpeg" />
 </p>
 <p align="left">
   Mobile view in normal mode
@@ -74,7 +74,7 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 <br>
 <br>
 <p align="right">
-  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/7.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/7.jpeg" />
 </p>
 <p align="right">
   Mobile view in dark mode
@@ -82,7 +82,7 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/8.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/8.PNG" />
 </p>
 <p align="center">
   Light House Report
