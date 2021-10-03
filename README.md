@@ -65,18 +65,18 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 </p>
 <br>
 <br>
-<p align="left">
+<p align="center">
   <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/6.jpeg" />
 </p>
-<p align="left">
+<p align="center">
   Mobile view in normal mode
 </p>
 <br>
 <br>
-<p align="right">
+<p align="center">
   <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/7.jpeg" />
 </p>
-<p align="right">
+<p align="center">
   Mobile view in dark mode
 </p>
 <br>
@@ -90,14 +90,15 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 
 
 ## Overall Functionlity
-- Main Landing Listing Page with search form, Descriptions, Cities and Few hotels
-- Viewing Hotels by search or selecting cities
-- Filtering Hotels by Price or rating parameter
-- Viewing single hotel with full description and booking hotel
-- Getting Reservation details fot booking hotel
-- User can only booked hotel or see their history if ony they are logged in !!
-- Booking Hotel through Razorpay test mode payment simulation
-- Going to my booking page to see history of your booking, all upcoming, cancelled or completed trips.
+- Main Landing page with list of articles published
+- Switch for night and light mode
+- Filtering articles by categories
+- Viewing Individual Article
+- Share buttons to share article on social media platform
+- Fully Mobile Optimized 
+- Strapi CMS to publish blog
+
+
 
 
 ***Glad to see you here! Show some love by [starring](https://github.com/killcodeX/devpost) this repo.***
