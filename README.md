@@ -26,50 +26,66 @@ Strapi CMS Code -> [https://github.com/killcodeX/strapi-blog/tree/cloud](https:/
 ## ScreenShots
 
 <p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/1.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/1.png" />
 </p>
 <p align="center">
-  Main Page
-</p>
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/2.png" />
-</p>
-<p align="center">
-  Login Page
+  Main Page (Normal Mode)
 </p>
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/3.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/2.png" />
 </p>
 <p align="center">
-  Hotels Listing Page
-</p>
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/4.png" />
-</p>
-<p align="center">
-  Single Hotel Page with booking form
+  Main Page (Dark Mode)
 </p>
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/5.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/4.png" />
 </p>
 <p align="center">
-  Booking Page with Payment Gateway
+  Article Page (Title with banner)
 </p>
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/killcodeX/mern-hotelin/blob/main/screenshots/6.png" />
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/3.png" />
 </p>
 <p align="center">
-  Booking History Page
+  Article Page (Content)
+</p>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/5.png" />
+</p>
+<p align="center">
+  Article By Category
+</p>
+<br>
+<br>
+<p align="left">
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/6.png" />
+</p>
+<p align="left">
+  Mobile view in normal mode
+</p>
+<br>
+<br>
+<p align="right">
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/7.png" />
+</p>
+<p align="right">
+  Mobile view in dark mode
+</p>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/killcodeX/devpost/blob/main/screenshots/8.png" />
+</p>
+<p align="center">
+  Light House Report
 </p>
 
 
